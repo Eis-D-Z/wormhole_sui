@@ -1,0 +1,8 @@
+{
+	"dependencies": {
+		"@mysten/sui": "^1.13.0",
+		"@wormhole-foundation/sdk": "^0.10.9",
+		"bs58": "^6.0.0",
+		"dotenv": "^16.4.5"
+	}
+}
