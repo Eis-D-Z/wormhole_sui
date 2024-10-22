@@ -86,7 +86,7 @@ public fun happy_path() {
         let state = scn.take_shared<State>();
         let clock = scn.take_shared<Clock>();
         let mut loyalty_data = scn.take_shared<LoyaltyData>();
-        messages::reveive_message(vaa, &state, &clock, &mut loyalty_data);
+        messages::receive_message(vaa, &state, &clock, &mut loyalty_data);
 
         ts::return_shared(state);
         ts::return_shared(clock);

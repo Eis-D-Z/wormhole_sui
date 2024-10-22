@@ -63,7 +63,8 @@ public fun emit_message_(
     user: vector<u8>,
     nonce: u32,
     emitter_cap: &mut EmitterCap
-) {
+) 
+{
     let msg_ticket = new_message(data, user, nonce, emitter_cap);
     publish_message::publish_message(wormhole_state, message_fee, msg_ticket, clock);
 }
